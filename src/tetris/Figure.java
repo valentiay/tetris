@@ -109,9 +109,9 @@ class Figure implements Cloneable {
     private static Figure makeRightZ() {
         Figure figure = new Figure();
         figure.color = new Color(94, 167, 201);
-        figure.cells.add(new Pair<>(0, 0));
         figure.cells.add(new Pair<>(-1, 0));
-        figure.cells.add(new Pair<>(1, 0));
+        figure.cells.add(new Pair<>(0, 0));
+        figure.cells.add(new Pair<>(0, 1));
         figure.cells.add(new Pair<>(1, 1));
         return figure;
     }
@@ -120,8 +120,8 @@ class Figure implements Cloneable {
         Figure figure = new Figure();
         figure.color = new Color(42, 201, 23);
         figure.cells.add(new Pair<>(0, 0));
-        figure.cells.add(new Pair<>(-1, -1));
-        figure.cells.add(new Pair<>(-1, 0));
+        figure.cells.add(new Pair<>(-1, 1));
+        figure.cells.add(new Pair<>(0, 1));
         figure.cells.add(new Pair<>(1, 0));
         return figure;
     }
